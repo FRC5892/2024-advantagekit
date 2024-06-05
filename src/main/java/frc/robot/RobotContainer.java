@@ -152,7 +152,7 @@ public class RobotContainer {
             () -> -controller.getRightX()));
     controller.x().onTrue(Commands.runOnce(drive::stopWithX, drive));
     controller
-        .b()
+        .y()
         .onTrue(
             Commands.runOnce(
                     () ->
